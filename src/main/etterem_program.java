@@ -4,6 +4,8 @@
  */
 package main;
 
+import modell.Etterem;
+
 /**
  *
  * @author dobrocsi.kornel
@@ -14,7 +16,7 @@ public class etterem_program {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+        Etterem etterem=new Etterem();
     }
     
 }
