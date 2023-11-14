@@ -16,7 +16,7 @@ Egy étterem rendeléseket vesz be. Ha kiviszik őket, akkor a rendelés leadva 
 Az Étterem tömbben tárolja a rendeléseket! Az étterem alapértelmezetten 5 rendelés befogadására alkalmas, de ettől eltérőt is megadhatunk! Nem kell optimalizálni, hogy a kiadott rendelés helyére vegyünk fel új rendelést, folyamatosan rakjuk a tömbbe a rendeléseket! A kifizetésnél is csak annyit kell megcsinálni, hogy ne legyen már az étteremben a rendelés! Jelezzük, ha megtelt az étterem, de máshogy nem kell foglalkozni ezzel az esettel!
 
 ## Étterem program II.
-Az étterem fejlődött, most már makaronit is be tud venni! A makaronik van mennyisége, ami minden rendelés után csökken 3% -kal!
+Az étterem fejlődött, most már makaronit is be tud venni! A makaroninal van mennyisége, ami minden rendelés után csökken 3% -kal!
 
 ### Technikai specifikáció: 
 A fork-olt projektben legyen toString a termék osztályokban! Javítsd a hibát is!
