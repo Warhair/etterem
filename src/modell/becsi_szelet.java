@@ -1,13 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package modell;
 
-/**
- *
- * @author dobrocsi.kornel
- */
-public class becsi_szelet {
+
+public class Becsi_szelet extends Etel{
+        private int mennyiseg=4;
+
+    public Becsi_szelet(int asztalSzama, boolean kifizetett) {
+        super(asztalSzama, kifizetett);
+    }
     
+    public int getMennyiseg(){
+        return mennyiseg;
+    }
+    public void setMennyiseg(int mennyiseg){
+        this.mennyiseg=mennyiseg;
+    }
+        
 }

@@ -1,13 +1,17 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package modell;
 
-/**
- *
- * @author dobrocsi.kornel
- */
 public class Etterem {
+    private Etel[] etelek;
+    private int Asztalokdb;
+
+    public Etterem() {
+        this(5);
+    }
+    public Etterem(int db){
+        Asztalokdb=0;
+        etelek=new Etel[db];
+    }
+    
     
 }

@@ -1,20 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package main;
 
 import modell.Etterem;
+import modell.Etel;
+import modell.Becsi_szelet;
+import modell.Makaroni;
 
-/**
- *
- * @author dobrocsi.kornel
- */
 public class etterem_program {
 
-    /**
-     * @param args the command line arguments
-     */
+    private Etterem etterem;
     public static void main(String[] args) {
         Etterem etterem=new Etterem();
     }

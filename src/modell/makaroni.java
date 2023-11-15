@@ -1,13 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package modell;
 
-/**
- *
- * @author dobrocsi.kornel
- */
-public class makaroni {
+
+public class Makaroni {
+    private double keszlet;
+
+    public Makaroni(double keszlet) {
+        this.keszlet = keszlet;
+    }
+    public double getMakaroni(){
+        return keszlet;
+    }
+    
+    public void setMakroni(){
+        this.keszlet=keszlet;
+    }
     
 }
