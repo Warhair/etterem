@@ -8,6 +8,6 @@ package modell;
  *
  * @author dobrocsi.kornel
  */
-public class makaroni {
+public class Makaroni {
     
 }

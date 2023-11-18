@@ -9,5 +9,28 @@ package modell;
  * @author dobrocsi.kornel
  */
 public class Etterem {
+    private Etel[] etel;
+    private int etelDb;
+    private enum UzemelesiAllapot {UZEMEL, NEM_UZEMEL, LEEGETT};
+    private UzemelesiAllapot allapot;
     
+    public Etterem() {
+        etelDb = 10;
+    }
+    public Etterem(int db){
+        etelDb = 0;
+        etel = new Etel[db];
+        allapot = UzemelesiAllapot.UZEMEL;
+    }
+    public void leeg(){
+        allapot = UzemelesiAllapot.LEEGETT;
+    }
+    public UzemelesiAllapot getUzemel(){
+        return allapot;
+    }
+    public boolean isUzemel(){
+        return allapot == UzemelesiAllapot.UZEMEL;
+    }
+   
+
 }
