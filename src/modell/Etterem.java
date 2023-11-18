@@ -9,7 +9,7 @@ package modell;
  * @author dobrocsi.kornel
  */
 public class Etterem {
-    private Etel[] etel;
+    private etel[] etel;
     private int etelDb;
     private enum UzemelesiAllapot {UZEMEL, NEM_UZEMEL, LEEGETT};
     private UzemelesiAllapot allapot;
@@ -19,7 +19,7 @@ public class Etterem {
     }
     public Etterem(int db){
         etelDb = 0;
-        etel = new Etel[db];
+        etel = new etel[db];
         allapot = UzemelesiAllapot.UZEMEL;
     }
     public void leeg(){

@@ -8,15 +8,15 @@ package modell;
  *
  * @author dobrocsi.kornel
  */
-public class Becsi_szelet  extends Etel{
+public class becsi_szelet  extends Etel{
     private enum Meretek {URES, NEGYED_TAL, FEL_TAL, HAROMNEGYED_TAL, EGESZ_TAL}
     private Meretek meret;
     
-    public Becsi_szelet(String etel_nev, Meretek meret){
+    public becsi_szelet(String etel_nev, Meretek meret){
         super(etel_nev);
        this.meret = Meretek.EGESZ_TAL;
     }   
-    public Becsi_szelet(String etel_nev, boolean megrendelve) {
+    public becsi_szelet(String etel_nev, boolean megrendelve) {
         super(etel_nev, megrendelve);
         this.meret = meret;
     }

@@ -2,16 +2,16 @@
 package modell;
 
 
-public abstract class Etel {
+public abstract class etel {
     private String etel_nev;
     private boolean megrendelve;
     
-    public Etel(String etel_nev){
+    public etel(String etel_nev){
         this.etel_nev = etel_nev;
         this.megrendelve = true;
     }
     
-    public Etel(String etel_nev, boolean megrendelve) {
+    public etel(String etel_nev, boolean megrendelve) {
         this.etel_nev = etel_nev;
         this.megrendelve = megrendelve;
     }

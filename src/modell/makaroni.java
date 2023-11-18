@@ -8,6 +8,22 @@ package modell;
  *
  * @author dobrocsi.kornel
  */
-public class Makaroni {
+public class makaroni  extends  etel{
+    public makaroni(String etel_nev){
+     super(etel_nev);
+    }
+    public makaroni(String etel_nev, boolean megrendelve) {
+        super(etel_nev, megrendelve);
+    }
+
+    @Override
+    public void altalanosSutesHatasa() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void kimeloSutesHatasa() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
 }
