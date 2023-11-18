@@ -30,6 +30,12 @@ public class Becsi_szelet  extends Etel{
            default -> Meretek.URES;
         };
     }
+    @Override
+    public String toString() {
+        String os = super.toString();
+        return os + System.lineSeparator() + "\t"
+                + "Becsi szelet{" + "meret=" + meret + '}';
+    }
     
     @Override
     public void altalanosSutesHatasa() {
@@ -37,6 +43,7 @@ public class Becsi_szelet  extends Etel{
             meret = Meretek.values()[meret.ordinal() - 1];
         }
     }
+    
 
     @Override
     public void kimeloSutesHatasa() {
