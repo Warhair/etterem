@@ -2,28 +2,28 @@ package modell;
 
 public abstract class etel {
     
-    private String asztSzama;
-    private boolean elfogy;
+    private int asztSzama;
+    private boolean kif;
 
-    public etel(String asztSzama, boolean elfogy) {
+    public etel(int asztSzama, boolean kif) {
         this.asztSzama = asztSzama;
-        this.elfogy = elfogy;
+        this.kif = kif;
     }
 
-    public String getAsztSzama() {
+    public int getAsztSzama() {
         return asztSzama;
     }
 
-    public boolean isElfogy() {
-        return elfogy;
+    public boolean isKif() {
+        return kif;
     }
 
-    public void setAsztSzama(String asztSzama) {
+    public void setAsztSzama(int asztSzama) {
         this.asztSzama = asztSzama;
     }
 
-    public void setElfogy(boolean elfogy) {
-        this.elfogy = elfogy;
+    public void setKif(boolean kif) {
+        this.kif = kif;
     }
     
     
