@@ -1,22 +1,53 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package main;
 
 import modell.Etterem;
+import modell.becsi_szelet;
+import modell.makaroni;
+import modell.etel;
 
-/**
- *
- * @author dobrocsi.kornel
- */
+
 public class etterem_program {
-
-    /**
-     * @param args the command line arguments
-     */
+    private Etterem Eterem;
+   
     public static void main(String[] args) {
-        Etterem etterem =new Etterem();
+        new etterem_program();
+    }
+    public etterem_program(){
+        Eterem = new Etterem(4);
+        Eterem.bevesz(new becsi_szelet("becsiszelet", true));
+        Eterem.bevesz(new becsi_szelet("becsiszelet"));
+        Eterem.bevesz(new makaroni("makaroni",true));
+        Eterem.bevesz(new makaroni("makaroni"));
+        System.out.println("--- Étterem etelei sütés előtt:");
+        mosodaRuhai();
+        System.out.println("--- Étterem etelei 2. ÁLTALÁNOS sütés után:");
+        Eterem.altalanosSutes();
+        Eterem.altalanosSutes();
+        
+        mosodaRuhai();
+        
+        System.out.println("--- Étterem etelei 5. KÍMÉLŐ sütés után:");
+        for (int i = 0; i < 5; i++) {
+            Eterem.kimeloSutes();
+        }
+        mosodaRuhai();
+        
+        System.out.println("--- Étterem etelei 10. ÁLTALÁNOS sütés után:");
+        for (int i = 0; i < 10; i++) {
+            Eterem.altalanosSutes();
+        }
+        mosodaRuhai();
+       Eterem.leeg();
+       Eterem.altalanosSutes();
+       Eterem.getEtelek();
+    }
+    private void mosodaRuhai() {
+        for (etel Etermek : Eterem.getEtelek()) {
+            if(Etermek != null){
+                System.out.println(Etermek);
+            }
+        }
     }
     
 }

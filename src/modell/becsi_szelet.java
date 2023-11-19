@@ -4,21 +4,25 @@
  */
 package modell;
 
-/**
- *
- * @author dobrocsi.kornel
- */
-public class becsi_szelet  extends Etel{
+public class becsi_szelet  extends etel{
     private enum Meretek {URES, NEGYED_TAL, FEL_TAL, HAROMNEGYED_TAL, EGESZ_TAL}
     private Meretek meret;
+
+    public Meretek getMeret() {
+        return meret;
+    }
+
+    public void setMeret(Meretek meret) {
+        this.meret = meret;
+    }
     
-    public becsi_szelet(String etel_nev, Meretek meret){
+    public becsi_szelet(String etel_nev){
         super(etel_nev);
        this.meret = Meretek.EGESZ_TAL;
     }   
     public becsi_szelet(String etel_nev, boolean megrendelve) {
         super(etel_nev, megrendelve);
-        this.meret = meret;
+        this.meret = Meretek.EGESZ_TAL;
     }
     public void osszemegy(){
         /* IDE ajánlása: */
@@ -39,8 +43,8 @@ public class becsi_szelet  extends Etel{
     
     @Override
     public void altalanosSutesHatasa() {
-        if(meret.ordinal() > 0){
-            meret = Meretek.values()[meret.ordinal() - 1];
+            if(meret.ordinal() > 0){
+                meret = Meretek.values()[meret.ordinal() - 1];
         }
     }
     
