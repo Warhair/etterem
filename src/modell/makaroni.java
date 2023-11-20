@@ -4,8 +4,8 @@ public class makaroni extends etel{
 
     private double maka;
 
-    public makaroni(int asztSzama, boolean kif) {
-        super(asztSzama, kif);
+    public makaroni(int asztSzama) {
+        super(asztSzama);
         maka = 100;
     }
 

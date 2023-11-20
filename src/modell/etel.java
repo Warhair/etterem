@@ -5,9 +5,9 @@ public abstract class etel {
     private int asztSzama;
     private boolean kif;
 
-    public etel(int asztSzama, boolean kif) {
+    public etel(int asztSzama) {
         this.asztSzama = asztSzama;
-        this.kif = kif;
+        this.kif = false;
     }
 
     public int getAsztSzama() {
@@ -24,6 +24,11 @@ public abstract class etel {
 
     public void setKif(boolean kif) {
         this.kif = kif;
+    }
+
+    @Override
+    public String toString() {
+        return "etel{" + "Asztal Száma=" + asztSzama + ", kifizetett=" + kif + '}';
     }
     
     
