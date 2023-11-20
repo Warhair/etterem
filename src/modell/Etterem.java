@@ -58,12 +58,12 @@ public class Etterem {
         }
     }
     
-    public void kimeloSutes(){
+    public void premiumSutes(){
         if (allapot == UzemelesiAllapot.UZEMEL) {
             for (etel etelek : Etel) {
                 if (etelek != null) {
                     etelek.setMegrendelve(true);
-                    etelek.kimeloSutesHatasa();
+                    etelek.premiumSutesHatasa();
                 }
             }
         } else {

@@ -29,7 +29,7 @@ public class etterem_program {
         
         System.out.println("--- Étterem etelei 5. KÍMÉLŐ sütés után:");
         for (int i = 0; i < 5; i++) {
-            Eterem.kimeloSutes();
+            Eterem.premiumSutes();
         }
         EtteremEtelei();
         
