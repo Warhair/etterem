@@ -2,11 +2,11 @@
 package modell;
 
 
-public class Becsi_szelet extends Etel{
-        private int mennyiseg=4;
+public class becsi_szelet extends etel{
+    private int mennyiseg=4;
 
-    public Becsi_szelet(int asztalSzama, boolean kifizetett) {
-        super(asztalSzama, kifizetett);
+    public becsi_szelet(int asztalSzama) {
+        super(asztalSzama);
     }
     
     public int getMennyiseg(){
@@ -15,5 +15,9 @@ public class Becsi_szelet extends Etel{
     public void setMennyiseg(int mennyiseg){
         this.mennyiseg=mennyiseg;
     }
-        
+    public  void NemPremium(){
+        this.mennyiseg=this.mennyiseg-1;
+    }
+    public  void Premium(){
+    }
 }

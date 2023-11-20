@@ -2,13 +2,15 @@
 package modell;
 
 
-public abstract class Etel {
+public abstract class etel {
     private int asztalSzama;
     private boolean kifizetett;
     
-    public Etel(int asztalSzama, boolean kifizetett) {
+    
+    
+    public etel(int asztalSzama) {
     this.asztalSzama = asztalSzama;
-        this.kifizetett = kifizetett;
+    this.kifizetett = false;
     }
     public int getAsztalSzama(){
         return asztalSzama;
@@ -19,8 +21,13 @@ public abstract class Etel {
     public boolean getKifizetett(){
         return this.kifizetett;
     }
-    public boolean setKifizetett(){
+    public boolean setKifizetett(boolean kifizetett){
        return this.kifizetett=kifizetett;
-        
     }
+    @Override
+    public String toString() {
+        return "etel{" + "asztalszama=" + asztalSzama + ", kifizetett=" + kifizetett + '}';
+    }
+    public abstract void NemPremium();
+    public abstract void Premium();
 }
