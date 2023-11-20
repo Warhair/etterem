@@ -39,6 +39,8 @@ public class etterem_program {
         }
         mosodaRuhai();
        Eterem.leeg();
+       Eterem.kiad("becsiszelet");
+       Eterem.bevesz(new becsi_szelet("becsiszelet", true));
        Eterem.altalanosSutes();
        Eterem.getEtelek();
     }

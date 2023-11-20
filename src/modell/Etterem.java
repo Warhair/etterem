@@ -95,14 +95,14 @@ public class Etterem {
 
     public etel[] getEtelek() {
         if (allapot == UzemelesiAllapot.UZEMEL) {
-            etel[] kiadottRuhak = new etel[this.Etel.length];
+            etel[] kiadotEtel = new etel[this.Etel.length];
             for (int i = 0; i < etelDb; i++) {
-                etel aktualisRuha = this.Etel[i];
-                if (aktualisRuha != null) {
-                    kiadottRuhak[i] = aktualisRuha;
+                etel aktualisEtel = this.Etel[i];
+                if (aktualisEtel != null) {
+                    kiadotEtel[i] = aktualisEtel;
                 }
             }
-            return kiadottRuhak;
+            return kiadotEtel;
         } else {
             nemUzemel();
             return new etel[0];
