@@ -8,7 +8,7 @@ public class Etterem {
     private boolean uzemel = true;
 
     public Etterem(int rendelesekDB) {
-        this.rendelesek = rendelesek;
+        this.rendelesek = new etel[rendelesekDB];
         this.rendelesekDB = rendelesekDB;
         this.uzemel = true;
     }

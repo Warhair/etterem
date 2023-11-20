@@ -19,7 +19,6 @@ public class etterem_program {
         etterem.rendel(new makaroni(2));
         etterem.leeg();
         etterem.rendel(new makaroni(3));
-
         etterem.etelKiad(2);
         
         
