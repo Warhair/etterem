@@ -20,31 +20,31 @@ public class etterem_program {
         Eterem.bevesz(new makaroni("makaroni",true));
         Eterem.bevesz(new makaroni("makaroni"));
         System.out.println("--- Étterem etelei sütés előtt:");
-        mosodaRuhai();
+        EtteremEtelei();
         System.out.println("--- Étterem etelei 2. ÁLTALÁNOS sütés után:");
         Eterem.altalanosSutes();
         Eterem.altalanosSutes();
         
-        mosodaRuhai();
+        EtteremEtelei();
         
         System.out.println("--- Étterem etelei 5. KÍMÉLŐ sütés után:");
         for (int i = 0; i < 5; i++) {
             Eterem.kimeloSutes();
         }
-        mosodaRuhai();
+        EtteremEtelei();
         
         System.out.println("--- Étterem etelei 10. ÁLTALÁNOS sütés után:");
         for (int i = 0; i < 10; i++) {
             Eterem.altalanosSutes();
         }
-        mosodaRuhai();
+        EtteremEtelei();
        Eterem.leeg();
        Eterem.kiad("becsiszelet");
        Eterem.bevesz(new becsi_szelet("becsiszelet", true));
        Eterem.altalanosSutes();
        Eterem.getEtelek();
     }
-    private void mosodaRuhai() {
+    private void EtteremEtelei() {
         for (etel Etermek : Eterem.getEtelek()) {
             if(Etermek != null){
                 System.out.println(Etermek);
