@@ -50,7 +50,7 @@ public class becsi_szelet  extends etel{
     
 
     @Override
-    public void kimeloSutesHatasa() {
+    public void premiumSutesHatasa() {
     }
     
 }

@@ -35,7 +35,7 @@ public class makaroni  extends  etel{
     }
 
     @Override
-    public void kimeloSutesHatasa() {
+    public void premiumSutesHatasa() {
          menyiseg *= .985;
        
     }

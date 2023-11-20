@@ -15,7 +15,7 @@ public class NemletezoEtel  extends etel{
     }
 
     @Override
-    public void kimeloSutesHatasa() {
+    public void premiumSutesHatasa() {
         
     }
    

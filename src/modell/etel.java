@@ -40,6 +40,6 @@ public abstract class etel {
     
     
     public abstract void altalanosSutesHatasa();
-    public abstract void kimeloSutesHatasa();
+    public abstract void premiumSutesHatasa();
     
 }
